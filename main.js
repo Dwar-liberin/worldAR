@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const items = [];
     for (let i = 0; i < itemNames.length; i++) {
       const model = await loadGLTF(
-        "../../assets/models/" + itemNames[i] + "/scene.gltf"
+        "./assets/models/" + itemNames[i] + "/scene.gltf"
       );
       normalizeModel(model.scene, itemHeights[i]);
       const item = new THREE.Group();
